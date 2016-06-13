@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vipul.nasadaily.ImageDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bimage"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/title"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by:Vipul"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/byline"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:26/06/1996"
+            android:layout_weight="0"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/promodate"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/background"
+        android:id="@+id/image"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="text"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/description"/>
+
+</LinearLayout>
+    </RelativeLayout>
+</ScrollView>
