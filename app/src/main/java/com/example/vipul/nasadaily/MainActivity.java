@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 .defaultDisplayImageOptions(defaultOptions)
                 .build();
         ImageLoader.getInstance().init(config); // Do it on Application start
+        recyclerView = (RecyclerView) this.findViewById(R.id.recycle);
+        responseList = new ArrayList<>();
         new GsonTask().execute();
         //RefreshFeed();
     }
@@ -59,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            recyclerView = (RecyclerView)findViewById(R.id.nasa_recycler);
-            responseList = new ArrayList<>();
             dialog.show();
         }
 

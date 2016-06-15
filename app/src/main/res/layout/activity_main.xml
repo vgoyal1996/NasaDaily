@@ -5,9 +5,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.vipul.nasadaily.MainActivity">
 
-    <fragment
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/container"/>
+        android:id="@+id/recycle">
+
+    </android.support.v7.widget.RecyclerView>
     
 </FrameLayout>

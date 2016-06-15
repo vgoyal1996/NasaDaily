@@ -1,11 +1,8 @@
 package com.example.vipul.nasadaily;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -46,15 +43,15 @@ public class ImageDetailActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     /* adapt the image to the size of the display */
-        Display display = getWindowManager().getDefaultDisplay();
+        /*Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);
         Bitmap bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(
-                getResources(),R.drawable.background),size.x,size.y,true);
+                getResources(),R.drawable.background),size.x,size.y,true);*/
 
     /* fill the background ImageView with the resized image */
-        ImageView iv_background = (ImageView) findViewById(R.id.bimage);
-        iv_background.setImageBitmap(bmp);
+        /*ImageView iv_background = (ImageView) findViewById(R.id.bimage);
+        iv_background.setImageBitmap(bmp);*/
 
         title = (TextView)findViewById(R.id.title);
         date = (TextView)findViewById(R.id.promodate);
